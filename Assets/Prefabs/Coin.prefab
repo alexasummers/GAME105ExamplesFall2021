@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6372447598270798680
+--- !u!1 &6516199358337117574
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5939956961066432887}
-  - component: {fileID: 2805601180023984886}
-  - component: {fileID: 3589143384971872043}
-  - component: {fileID: 2375688226082700689}
+  - component: {fileID: 5032507634130143031}
+  - component: {fileID: 1046905655914177710}
+  - component: {fileID: 5462349978186854764}
+  - component: {fileID: 8996667222637180877}
+  - component: {fileID: -2537194422942201726}
+  - component: {fileID: -7349961096952305899}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -19,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5939956961066432887
+--- !u!4 &5032507634130143031
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372447598270798680}
-  m_LocalRotation: {x: 0.6038387, y: 0.36668515, z: -0.3652333, w: 0.6062389}
-  m_LocalPosition: {x: 26.572424, y: 10.386625, z: -14.242339}
-  m_LocalScale: {x: 1, y: 0.10052, z: 1}
+  m_GameObject: {fileID: 6516199358337117574}
+  m_LocalRotation: {x: -0, y: -0, z: -0.71736026, w: 0.6967025}
+  m_LocalPosition: {x: 5.9917226, y: 1.364, z: 0.44517642}
+  m_LocalScale: {x: 1, y: 0.067986, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 89.774, y: 62.337, z: 0.001}
---- !u!33 &2805601180023984886
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.674}
+--- !u!33 &1046905655914177710
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372447598270798680}
+  m_GameObject: {fileID: 6516199358337117574}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3589143384971872043
+--- !u!23 &5462349978186854764
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372447598270798680}
+  m_GameObject: {fileID: 6516199358337117574}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -83,17 +85,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2375688226082700689
+--- !u!136 &8996667222637180877
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6372447598270798680}
+  m_GameObject: {fileID: 6516199358337117574}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-2537194422942201726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516199358337117574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &-7349961096952305899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6516199358337117574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe58df89b5b74a97a123b5ed2b70422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 0eeda1a75cf3c804ab0fd801d012c97a, type: 2}
