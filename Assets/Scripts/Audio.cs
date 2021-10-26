@@ -9,7 +9,6 @@ public class Audio : MonoBehaviour
     void Start()
     {
        _ding = GetComponent<AudioSource>();
-       GetComponent<AudioSource>().playOnAwake = false;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -17,3 +16,4 @@ public class Audio : MonoBehaviour
         _ding.Play();
     }
 }
+
